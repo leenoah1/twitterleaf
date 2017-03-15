@@ -51,7 +51,7 @@
     // Add pop-up information (name, twitter handle, and tweet) to the points
 	function onEachFeature(feature, layer) {
 		var popupContent = "Name:" + feature.properties.name + "</br>" +
-                 "<b>Twitter Handle<b>:" + feature.properties.twitter_handle + "</br>" +
+                 "Twitter Handle:" + feature.properties.twitter_handle + "</br>" +
 				 "Tweet:" + feature.properties.text;
 		if (feature.properties && feature.properties.popupContent) {
 			popupContent += feature.properties.popupContent;
