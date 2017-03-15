@@ -12,7 +12,8 @@ var tweets = {
             "type": "Feature", 
             "properties": {
                 "text": "@work", 
-                "created_at": "Wed Mar 08 15:37:24 +0000 2017"
+                "twitter_handle": "GESclass_nnl", 
+                "name": "Noah Lee"
             }
         }, 
         {
@@ -26,7 +27,8 @@ var tweets = {
             "type": "Feature", 
             "properties": {
                 "text": "Leaving class, finally", 
-                "created_at": "Wed Mar 08 01:06:48 +0000 2017"
+                "twitter_handle": "GESclass_nnl", 
+                "name": "Noah Lee"
             }
         }, 
         {
@@ -40,7 +42,8 @@ var tweets = {
             "type": "Feature", 
             "properties": {
                 "text": "Tweet tweet", 
-                "created_at": "Wed Mar 08 00:38:25 +0000 2017"
+                "twitter_handle": "GESclass_nnl", 
+                "name": "Noah Lee"
             }
         }
     ]
