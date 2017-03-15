@@ -59,7 +59,6 @@ with open(tweets_filename) as data_file:
 				"type": "Feature",
 				"properties": {
 					"twitter_handle": tweet['user']['screen_name'],
-					"name": tweet['user']['name'],
 					"text": tweet['text']
 				},
 				"geometry": {
