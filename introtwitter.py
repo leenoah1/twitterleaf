@@ -38,7 +38,7 @@ auth=twitter.oauth.OAuth(TOKEN,TOKEN_SECRET,CONSUMER_KEY, CONSUMER_SECRET)
 t = twitter.Twitter(auth=auth)
 
 # Retrieve the 10 most recent statuses from the user's screen name
-recent_tweets = t.statuses.user_timeline(screen_name='GESclass_nnl',count=20)
+recent_tweets = t.statuses.user_timeline(screen_name='GESclass_nnl',count=14)
 
 # Dump the information into a newly created JSON file
 tweets_in_json= json.dumps(recent_tweets, indent=4, sort_keys=True)
