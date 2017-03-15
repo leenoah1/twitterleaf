@@ -35,8 +35,8 @@ var tweets = {
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    -77.20183901, 
-                    39.094163
+                    -77.40183901, 
+                    39.394163
                 ]
             }, 
             "type": "Feature", 
