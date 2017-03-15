@@ -52,7 +52,7 @@
 	function onEachFeature(feature, layer) {
 		var popupContent = "<b>Name:</b>" + feature.properties.name + "</br>" +
                  "<b>Twitter Handle:</b>" + feature.properties.twitter_handle + "</br>" +
-				 "<b>Tweet:</b>" + feature.properties.text;
+				 "<b>Tweet:</b>" + feature.properties.text + "";
 		if (feature.properties && feature.properties.popupContent) {
 			popupContent += feature.properties.popupContent;
 		}
