@@ -59,8 +59,7 @@ var geotagMarkerOptions = {
     fillOpacity: 0.8
 };
   
-  
-  
+
     // Add pop-up to twitter points
 	function onEachFeature(feature, layer) {
 		var popupContent = "<b>Name</b>: " + feature.properties.name + "</br>" +
@@ -73,9 +72,7 @@ var geotagMarkerOptions = {
 
 		layer.bindPopup(popupContent);
 	}
-  
-  
-  
+
     // Add the tweets from my orginal tweet feed
 	L.geoJSON(tweets, {
          pointToLayer: function (feature, latlng) {
@@ -84,14 +81,13 @@ var geotagMarkerOptions = {
       onEachFeature: onEachFeature
     }).addTo(map);
 
- 
-  
+	
     // Add pop-up information for geotag3
 	function onEachFeature2(feature, layer) {
 		var popupContent = '<img src="' + feature.properties.image + '" height="300" width="300"/>' + "</br>" +
                  "<b>Name</b>: " + feature.properties.name + "</br>" +
                  "<b>Twitter Handle</b>: " + feature.properties.twitter_handle + "</br>" +
-				 "<b>Tweet</b>: " + feature.properties.text;
+				 "<b>Tweet</b><i>: " + feature.properties.text;
 
 		if (feature.properties && feature.properties.popupContent) {
 			popupContent += feature.properties.popupContent;
