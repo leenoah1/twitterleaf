@@ -89,9 +89,9 @@ var geotagMarkerOptions = {
     // Add pop-up information for geotag3
 	function onEachFeature2(feature, layer) {
 		var popupContent = '<img src="' + feature.properties.image + '" height="300" width="300"/>' + "</br>" +
-                 "<u><b>Name</b></u>: " + feature.properties.name + "</br>" +
-                 "<u><b>Twitter Handle</b></u>: " + feature.properties.twitter_handle + "</br>" +
-				 "<u><b>Tweet</b></u>: " + feature.properties.text;
+                 "<b>Name</b>: " + feature.properties.name + "</br>" +
+                 "<b>Twitter Handle</b>: " + feature.properties.twitter_handle + "</br>" +
+				 "<b>Tweet</b>: " + feature.properties.text;
 
 		if (feature.properties && feature.properties.popupContent) {
 			popupContent += feature.properties.popupContent;
