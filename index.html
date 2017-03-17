@@ -29,8 +29,8 @@
 <script src="https://leenoah1.github.io/twitterleaf/twitter2_geotag3.js" type="text/javascript"></script>
 
 <script>
-  
-    // Create the mapview
+ 
+	// mapview creation
 	var map = L.map('map').setView([39.105240, -77.07978], 10);
 
     // Add a tile layer to the mapview
@@ -73,7 +73,7 @@ var geotagMarkerOptions = {
 		layer.bindPopup(popupContent);
 	}
 
-    // Add the tweets from my orginal tweet feed
+    // Add the tweets from my orginal tweet feed that was converted from json to geojson
 	L.geoJSON(tweets, {
          pointToLayer: function (feature, latlng) {
            return L.marker(latlng, {icon: twitterIcon});
