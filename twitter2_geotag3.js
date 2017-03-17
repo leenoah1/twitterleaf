@@ -16,22 +16,7 @@ var tweets2 = {
                 "name": "Geo"
                 "image": "https://upload.wikimedia.org/wikipedia/commons/7/77/Kas_Flowers.JPG"
             }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -77.20, 
-                    39.1414976
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "text": "I love GIS", 
-                "twitter_handle": "geotag3I love GIS", 
-                "name": "Geo"
-            }
-        }, 
+        },        
         {
             "geometry": {
                 "type": "Point", 
@@ -45,6 +30,7 @@ var tweets2 = {
                 "text": "This is my geolocation tweet", 
                 "twitter_handle": "geotag3", 
                 "name": "Geo"
+                "image": "http://www.temples.ru/private/f000030/uglich_5g.jpg"
             }
         }
     ]
