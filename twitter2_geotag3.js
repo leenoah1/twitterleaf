@@ -1,36 +1,20 @@
-var tweets2 = {
+tweets2 = {
     "type": "FeatureCollection", 
     "features": [
         {
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    -77.5, 
-                    38.7
+                    -77.24287239, 
+                    39.11278323
                 ]
             }, 
             "type": "Feature", 
             "properties": {
-                "text": "Life is great", 
+                "text": "Finally, some white in our winter lives! https://t.co/Fuj0MhU4VQ", 
                 "twitter_handle": "geotag3", 
-                "name": "Geo"
-                "image": 
-            }
-        },        
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -77.4183901, 
-                    39.394163
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "text": "This is my geolocation tweet", 
-                "twitter_handle": "geotag3", 
-                "name": "Geo"
-                "image": "http://www.temples.ru/private/f000030/uglich_5g.jpg"
+                "name": "geot",
+		"image": "https://pbs.twimg.com/media/C65zqF4WgAEELhf.jpg"
             }
         }
     ]
