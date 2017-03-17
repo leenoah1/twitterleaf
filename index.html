@@ -49,6 +49,16 @@
 		popupAnchor: [0, -28]
 	});
   
+	var geojsonMarkerOptions = {
+    radius: 8,
+    fillColor: "#ff0000",
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.8
+};
+	
+	
     // Add pop-up information (name, twitter handle, and tweet) to the points
 	function onEachFeature(feature, layer) {
 		var popupContent = "<b>Name:</b>" + feature.properties.name + "</br>" +
@@ -61,11 +71,11 @@
 	}
   
     // Add the tweets GeoJSON data to the map and style by the specified icon
-	L.geoJSON(tweets, {
+	L.geoJSON(tweets2, {
          pointToLayer: function (feature, latlng) {
-           return L.marker(latlng, {icon: twitterIcon});
+           return L.circleMarker(latlng, geojsonMarkerOptions);
          },
-      onEachFeature: onEachFeature
+      onEachFeature: onEachFeature2
     }).addTo(map);
 </script>
 
