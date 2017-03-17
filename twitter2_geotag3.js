@@ -14,7 +14,7 @@ var tweets2 = {
                 "text": "Life is great", 
                 "twitter_handle": "geotag3", 
                 "name": "Geo"
-                "image": "https://pbs.twimg.com/media/C65zqF4WgAEELhf.jpg"
+                "image": 
             }
         },        
         {
