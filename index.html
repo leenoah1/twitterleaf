@@ -56,28 +56,53 @@
     weight: 1,
     opacity: 1,
     fillOpacity: 0.8
-};
+};	
 	
-	
-    // Add pop-up information (name, twitter handle, and tweet) to the points
+ // Add pop-up information (name, twitter handle, and tweet) to the blue points
 	function onEachFeature(feature, layer) {
-		var popupContent = "<b>Name:</b>" + feature.properties.name + "</br>" +
-                 "<b>Twitter Handle:</b>" + feature.properties.twitter_handle + "</br>" +
-				 "<b>Tweet:</b>" + feature.properties.text + "";
+		var popupContent = "<u><b>Name</b></u>: " + feature.properties.name + "</br>" +
+                 "<u><b>Twitter Handle</b></u>: " + feature.properties.twitter_handle + "</br>" +
+				 "<u><b>Tweet</b></u>: " + feature.properties.text;
+
 		if (feature.properties && feature.properties.popupContent) {
 			popupContent += feature.properties.popupContent;
 		}
+
 		layer.bindPopup(popupContent);
 	}
   
-    // Add the tweets GeoJSON data to the map and style by the specified icon
+    // Add the tweets GeoJSON data to the map by custom icon
+	L.geoJSON(tweets, {
+         pointToLayer: function (feature, latlng) {
+           return L.marker(latlng, {icon: twitterIcon});
+         },
+      onEachFeature: onEachFeature
+    }).addTo(map);
+
+    // Add pop-up information (name, twitter handle, tweet, and image) to the red point
+	function onEachFeature2(feature, layer) {
+		var popupContent = '<img src="' + feature.properties.image + '" height="300" width="300"/>' + "</br>" +
+                 "<u><b>Name</b></u>: " + feature.properties.name + "</br>" +
+                 "<u><b>Twitter Handle</b></u>: " + feature.properties.twitter_handle + "</br>" +
+				 "<u><b>Tweet</b></u>: " + feature.properties.text;
+
+		if (feature.properties && feature.properties.popupContent) {
+			popupContent += feature.properties.popupContent;
+		}
+
+		layer.bindPopup(popupContent);
+	}
+  
+    // Add the other tweets GeoJSON data to the map by custom icon
 	L.geoJSON(tweets2, {
          pointToLayer: function (feature, latlng) {
            return L.circleMarker(latlng, geojsonMarkerOptions);
          },
       onEachFeature: onEachFeature2
     }).addTo(map);
+
 </script>
+
 
 
 
