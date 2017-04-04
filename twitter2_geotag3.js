@@ -13,7 +13,7 @@ tweets2 = {
             "properties": {
                 "text": "Finally, some white in our winter lives!", 
                 "twitter_handle": "geotag3", 
-                "name": "Geo",
+                "name": "geot",
 		"image": "https://pbs.twimg.com/media/C65zqF4WgAEELhf.jpg"
             }
         }
