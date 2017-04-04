@@ -14,7 +14,7 @@ tweets2 = {
                 "text": "This is my geolocation", 
                 "twitter_handle": "geotag3", 
                 "name": "Geo",
-		"image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/JPEG_example_JPG_RIP_100.jpg"
+		"image": "https://pbs.twimg.com/media/C65zqF4WgAEELhf.jpg"
             }
         }
     ]
