@@ -11,7 +11,7 @@ tweets2 = {
             }, 
             "type": "Feature", 
             "properties": {
-                "text": "This is my geolocation", 
+                "text": "Finally, some white in our winter lives!", 
                 "twitter_handle": "geotag3", 
                 "name": "Geo",
 		"image": "https://pbs.twimg.com/media/C65zqF4WgAEELhf.jpg"
